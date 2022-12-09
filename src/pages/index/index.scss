@@ -1,0 +1,60 @@
+.index {
+  width: 100%;
+  height: 100vh;
+  background-color: #eee;
+  position: relative;
+}
+
+.index-items {
+  width: 9rem;
+  height: 5rem;
+  background-color: #fff;
+  float: left;
+  padding: 0.4rem;
+  border-radius: 0.8rem;
+  overflow: hidden;
+  margin: 0.7rem;
+
+  .index-items-box {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    border-radius: 0.5rem;
+
+    .index-items-mask {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      border-radius: 0.5rem;
+      background: rgba($color: #000000, $alpha: 0.5);
+
+      image {
+        width: 1.5rem;
+        height: 1.5rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-0.75rem, -0.75rem);
+        z-index: 0;
+      }
+    }
+
+  }
+}
+
+#video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 3;
+  color: #fff;
+}
